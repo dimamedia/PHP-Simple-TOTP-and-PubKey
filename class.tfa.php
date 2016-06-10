@@ -19,7 +19,7 @@ class tfa {
 		// Decode public key's each character to base32 and save into binary chunks
 		foreach($key as $char) {
 			$n = $n << 5;
-			$n = $n + strpos($this->alphabet, $char);
+			$n = $n + stripos($this->alphabet, $char);
 			$j += 5;
 		
 			if($j >= 8) {
