@@ -16,7 +16,7 @@ $pubkey = $tfa->getPubKey();
 print $pubkey; // Example: RADV RKNM KOV3 Q22A
 
 ```
-Save public key on the server, use it in TOTP generators like Google Authenticator or Pebble Auth.
+Store public key on the server with the user account and use it in TOTP generators like Google Authenticator or Pebble's QuickAuth.
 
 ### Generate TOTP - time-based one-time password:
 
