@@ -29,7 +29,7 @@ class tfa {
 		}
 		/* End of Base32 decoder */
 
-		// current unix time 30sec interval as binary
+		// current unix time 30sec period as binary
 		$binary_timestamp = pack('N*', 0) . pack('N*', floor(microtime(true)/30));
 		// generate keyed hash
 		$hash = hash_hmac('sha1', $binary_timestamp, $binary_key, true);
